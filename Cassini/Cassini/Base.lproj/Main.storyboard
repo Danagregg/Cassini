@@ -20,10 +20,15 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2TM-xV-VBd">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Wkd-iX-ESi">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Wkd-iX-ESi" firstAttribute="centerX" secondItem="dDR-9Z-CfY" secondAttribute="centerX" id="6lf-ww-5kq"/>
                             <constraint firstItem="2TM-xV-VBd" firstAttribute="top" secondItem="dDR-9Z-CfY" secondAttribute="top" id="T0V-uT-Z2B"/>
+                            <constraint firstItem="Wkd-iX-ESi" firstAttribute="centerY" secondItem="dDR-9Z-CfY" secondAttribute="centerY" id="ab2-dV-gZA"/>
                             <constraint firstItem="2TM-xV-VBd" firstAttribute="leading" secondItem="dDR-9Z-CfY" secondAttribute="leading" id="cKh-eI-B9m"/>
                             <constraint firstItem="2TM-xV-VBd" firstAttribute="bottom" secondItem="NrS-jR-2XX" secondAttribute="top" id="eym-cb-yzB"/>
                             <constraint firstAttribute="trailing" secondItem="2TM-xV-VBd" secondAttribute="trailing" id="pnv-eG-r3u"/>
@@ -31,6 +36,7 @@
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="2TM-xV-VBd" id="ti1-JC-JPD"/>
+                        <outlet property="spinner" destination="Wkd-iX-ESi" id="Z3r-4n-zEt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JL9-zD-9kM" userLabel="First Responder" sceneMemberID="firstResponder"/>
